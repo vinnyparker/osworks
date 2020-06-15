@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'br.com.venustech'
-version = '0.0.1-SNAPSHOT'
+version = '1.0-aelora'
 sourceCompatibility = '1.8'
 
 repositories {
@@ -13,6 +13,9 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.3.1.RELEASE'
+    compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.11.0'
+
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
